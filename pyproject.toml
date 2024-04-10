@@ -24,17 +24,22 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  "tensorflow>=2.16.1",
+  "scikit-learn>=1.4.2",
+  "pandas>=2.2.2"
+]
 
 [project.urls]
-Documentation = "https://github.com/unknown/python-ml#readme"
-Issues = "https://github.com/unknown/python-ml/issues"
-Source = "https://github.com/unknown/python-ml"
+Documentation = "https://github.com/t63065488/python-ml#readme"
+Issues = "https://github.com/t63065488/python-ml/issues"
+Source = "https://github.com/t63065488/python-ml"
 
 [tool.hatch.version]
 path = "src/python_ml/__about__.py"
 
 [tool.hatch.envs.default]
+path = ".venv"
 dependencies = [
   "coverage[toml]>=6.5",
   "pytest",
